@@ -2,7 +2,21 @@
 //1 through 30 replacing numbers divisible by 3 with 'fizz', numbers divisible by 5 with 'buzz' and numbers divisible by 3 and 5 with
 //'fizzbuzz'
 
-let fizzBuzz30;
+let fizzBuzz30 = () => {
+    let myArray = [];
+    for (let i = 1; i<= 30; i++) {
+        if (((i % 3) === 0) && ((i % 5) === 0)) {
+         myArray.push("fizzbuzz");
+        } else if  ((i % 3 ) === 0) {
+            myArray.push("fizz");
+        } else if ((i % 5) === 0) {
+            myArray.push("buzz");
+        } else {
+            myArray.push(i);
+        }
+    }
+    return(myArray);
+};
 
 
 
